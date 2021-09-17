@@ -7,6 +7,7 @@ const rock = document.getElementById("r")
 const paper = document.getElementById("p")
 const scissor = document.getElementById("s")
 const userImg = document.getElementById("user-mainImg");
+const computerImg = document.getElementById("comp-mainImg");
 
 const choice = () => {
 
@@ -36,6 +37,17 @@ const lose = () => {
 
 const playGame = (userChoice) => {
     const compChoice = choice()
+
+
+    switch(compChoice) {
+
+        case "r": computerImg.src="images/rock-right.png";
+                  break;
+        case "p": computerImg.src="images/paper-right.png";
+                  break;
+        case "s": computerImg.src="images/scissor-right.png";
+                  break;
+    }
     console.log(userChoice, compChoice);
     switch(compChoice+userChoice) {
 
