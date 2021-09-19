@@ -22,7 +22,6 @@ const win = () => {
     console.log(user, userScore.innerHTML)
     console.log("win")
     userScore.innerHTML = user;
-    //computerScore.innerHTML = computer;
 
 }
 const lose = () => {
@@ -31,8 +30,6 @@ const lose = () => {
     console.log(computer, computerScore.innerHTML)
     console.log("lose")
     computerScore.innerHTML = computer;
-    //userScore.innerHTML = user;
-
 }
 
 const playGame = (userChoice) => {

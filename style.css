@@ -3,9 +3,14 @@
     padding: 20px;
     text-align: center;
 }
-.user-options {
+body {
+    background-image: linear-gradient(to right, #c0cada, #8b9dca, #6170b6, #43419c, #32037c);
+    color: white;
+    overflow: hidden;
+}
 
-    /*background-color: blue;*/
+.user-options {
+    
     position: absolute;
     bottom: 20%;
     left: 0;
@@ -26,6 +31,7 @@
     border:solid 3px #000000;
     border-radius: 50%;
     display: block;
+    background-color: white;
 }
 .green-glow {
 
@@ -40,10 +46,16 @@
 
     border-color: gray;
 }
-img {
-
+.badge-img {
+    
+    margin: 20px auto;
     width: 300px;
     height: 300px;
+}
+img {
+
+    width: 250px;
+    height: 250px;
 }
 .user-img {
 
@@ -52,7 +64,7 @@ img {
 }
 .row {
     position: relative;
-    padding: 30px;
+    padding: 20px;
     /*background-color: black;*/
 }
 .col-md-6 {
@@ -60,3 +72,4 @@ img {
     /*background-color: pink;*/
     text-align: center;
 }
+/*styling needs to be changed rest the functionality is working */
