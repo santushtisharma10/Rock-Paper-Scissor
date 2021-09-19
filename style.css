@@ -1,18 +1,21 @@
 .container-fluid {
 
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 body {
     background-image: linear-gradient(to right, #c0cada, #8b9dca, #6170b6, #43419c, #32037c);
     color: white;
-    overflow: hidden;
+    
 }
+h1 {
 
+    font-size: 45px;
+}
 .user-options {
     
     position: absolute;
-    bottom: 20%;
+    top: 20%;
     left: 0;
 }
 .user-options:hover {
@@ -32,23 +35,32 @@ body {
     border-radius: 50%;
     display: block;
     background-color: white;
+    padding: 5px;
+    margin: 10px;
 }
 .green-glow {
 
-    border-color: green;
+    border-color: rgb(11, 151, 11);
+        -webkit-box-shadow: -3px 5px 11px 11px #1AFF25; 
+box-shadow: -3px 5px 11px 11px #1AFF25;
 
 }
 .red-glow {
 
     border-color: red;
+    -webkit-box-shadow: -3px 5px 11px 11px #FF1A1A; 
+box-shadow: -3px 5px 11px 11px #FF1A1A;
 }
 .gray-glow {
 
     border-color: gray;
+    -webkit-box-shadow: -3px 5px 11px 11px #77766A; 
+box-shadow: -3px 5px 11px 11px #77766A;
+
 }
 .badge-img {
     
-    margin: 20px auto;
+    margin: 10px auto;
     width: 300px;
     height: 300px;
 }
@@ -64,7 +76,7 @@ img {
 }
 .row {
     position: relative;
-    padding: 20px;
+    padding: 5px;
     /*background-color: black;*/
 }
 .col-md-6 {

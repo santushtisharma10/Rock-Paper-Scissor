@@ -22,6 +22,12 @@ const win = () => {
     console.log(user, userScore.innerHTML)
     console.log("win")
     userScore.innerHTML = user;
+    document.getElementById("user-bd").classList.add("green-glow")
+    document.getElementById("comp-bd").classList.add("red-glow")
+
+    setTimeout(()=>{document.getElementById("user-bd").classList.remove("green-glow")
+    document.getElementById("comp-bd").classList.remove("red-glow")
+}, 500)
 
 }
 const lose = () => {
@@ -30,6 +36,26 @@ const lose = () => {
     console.log(computer, computerScore.innerHTML)
     console.log("lose")
     computerScore.innerHTML = computer;
+    document.getElementById("user-bd").classList.add("red-glow")
+    document.getElementById("comp-bd").classList.add("green-glow")
+
+
+    setTimeout(()=>{document.getElementById("user-bd").classList.remove("red-glow") 
+    document.getElementById("comp-bd").classList.remove("green-glow")
+
+}, 500)
+}
+const draw = () => {
+
+    document.getElementById("comp-bd").classList.add("gray-glow")
+    document.getElementById("user-bd").classList.add("gray-glow")
+
+    
+    setTimeout(()=>{document.getElementById("user-bd").classList.remove("gray-glow") 
+    document.getElementById("comp-bd").classList.remove("gray-glow")
+
+}, 500)
+
 }
 
 const playGame = (userChoice) => {
@@ -60,7 +86,7 @@ const playGame = (userChoice) => {
                   break;
         case "ss":
         case "rr":
-        case "pp":console.log("Draw")
+        case "pp":draw()
                   break;
     }
     
