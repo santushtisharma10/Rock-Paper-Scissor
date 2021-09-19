@@ -1,16 +1,17 @@
 .container-fluid {
 
-    padding: 5px;
+    padding: 15px;
     text-align: center;
 }
 body {
     background-image: linear-gradient(to right, #c0cada, #8b9dca, #6170b6, #43419c, #32037c);
     color: white;
+    font-family:'Times New Roman', Times, serif;
     
 }
 h1 {
 
-    font-size: 45px;
+    font-size: 50px;
 }
 .user-options {
     
